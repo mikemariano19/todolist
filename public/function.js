@@ -40,6 +40,5 @@ function addItem(){
     input.value = '';
 
 }
-console.log('asdasdasd')
 
 
