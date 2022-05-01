@@ -13,14 +13,13 @@ function addItem(){
     var checkIcon = document.createElement('i');
     var trashIcon = document.createElement('i');
 
-    // parentDiv.className = 'item';
+   
     itemList.className = 'md:col-span-5 mt-2 p-4 text-lg rounded flex justify-between font-semibold capitalize border-b border-1'
     itemList.innerHTML = '<div>'+input.value+'</div>';
     itemList.style.backgroundColor = 'white';
 
     checkIcon.className = 'fa-solid fa-square-check p-2';
     checkIcon.style.color = 'lightgray';
-    checkIcon.onclick = 'checkBox()'
     checkIcon.addEventListener('click', function(){
             checkIcon.style.color = 'limegreen';
             itemList.className = 'md:col-span-5 mt-2 p-4 text-lg rounded flex justify-between font-semibold capitalize border-b border-1 line-through'
